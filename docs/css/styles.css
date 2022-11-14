@@ -1,9 +1,11 @@
 body {
-  margin: auto;
-  width: 640px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 50px;
   font-family: 'Roboto'; 
-  color: #E9AFAF;    
+  background-color: #E9AFAF; 
+  color: #ffffff
 }
 
 img {
