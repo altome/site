@@ -1,13 +1,12 @@
 body {
-  
-  font-family: 'Roboto'; 
   background-color: #E9AFAF; 
-  color: #ffffff
 }
 h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Roboto'; 
+  color: #ffffff
 }
 img {
   display: block;
@@ -15,4 +14,8 @@ img {
   margin-right: auto;
   width: auto;
   height: 75%;
+}
+div {
+display: flex;
+justify-content: center;
 }
