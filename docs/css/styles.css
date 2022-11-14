@@ -2,20 +2,17 @@ body {
   background-color: #E9AFAF; 
 }
 h1 {
+  text-align: center;
   display: block;
   font-family: 'Roboto'; font-size: 22px;
   color: #ffffff
 }
 img {
   height: auto;
-  max-width:50%;
-  max-height:50%;
+  max-width:75%;
+  max-height:75%;
 }
 div {
 display: flex;
 justify-content: center;
-}
-.responsive {
-  width: 100%;
-  height: auto;
 }
