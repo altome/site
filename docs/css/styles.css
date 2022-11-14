@@ -3,9 +3,7 @@ body {
 }
 h1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Roboto'; 
+  font-family: 'Roboto'; font-size: 22px;
   color: #ffffff
 }
 img {
