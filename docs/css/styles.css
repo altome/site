@@ -1,0 +1,15 @@
+body {
+  margin: auto;
+  width: 640px; 
+  padding: 50px;
+  font-family: 'Roboto'; 
+  color: #E9AFAF;    
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 75%;
+}
