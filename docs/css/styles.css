@@ -19,7 +19,7 @@ img {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #b3b3b3;
+  background-color: #ddd;
   padding: 10px 10px;
 }
 
@@ -30,6 +30,7 @@ img {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  font-family: 'Roboto';
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
@@ -43,7 +44,7 @@ img {
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: #b3b3b3;
   color: black;
 }
 
