@@ -8,8 +8,8 @@ h1 {
   color: #ffffff
 }
 img {
-  height: auto;
-  max-width:40%;
+  max-height: 50%;
+  max-width:50%;
 }
 .center {
   display: flex;
@@ -67,9 +67,5 @@ img {
   }
   .header-right {
     float: none;
-  }#
-  img {
-  max-height: 40%;
-  width:auto;
-}
+  }
 }
