@@ -8,8 +8,8 @@ h1 {
   color: #ffffff
 }
 img {
-  max-height: screen.availHeight * 0.5;
-  max-width:  screen.availWidth  * 0.5;
+  max-height: 40%;
+  max-width:  40%;
 }
 .center {
   display: flex;
