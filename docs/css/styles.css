@@ -1,6 +1,10 @@
 body {
   background-color: #E9AFAF; 
 }
+#canvas{
+  border: solid 1px blue;  
+  width: 100%;
+}
 h1 {
   text-align: center;
   display: block;
