@@ -1,7 +1,7 @@
 body {
   background-color: #E9AFAF; 
 }
-canvas{
+responsive-canvas{
   width: 100%;
   object-fit: contain;
 }
