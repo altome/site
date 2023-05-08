@@ -6,8 +6,14 @@
     		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     		<link rel="stylesheet" href="/docs/css/styles.css">
   	</head>
-
-	<body>
+	<script>
+		function resizeCanvas() {
+    		var canvs = document.getElementById("snow");
+    		canvs.width = window.innerWidth;
+    		canvs.height = window.innerHeight;
+		}
+	</script>
+	<body onload="resizeCanvas();">
 		<div class="header">
       			<a href="index" class="logo">Altome.space</a>
        			<div class="header-right">
