@@ -20,32 +20,8 @@
 		<script>
 			let canvas = document.getElementById("tester");
 			canvas.width = window.screen.availWidth - 20;
-    			canvas.height = window.screen.availHeight * .7;
+    			canvas.height = window.screen.availHeight ;
 			let context = canvas.getContext('2d');
-			context.strokeStyle = '#ddd';
-			context.lineWidth = 4;
-			let sqrcnt = 2
-			let sqrsz = 60
-			let gap = 20
-			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
-			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
-			for(let i = 0; i < sqrcnt; i++){
-				for(let j = 0; j < sqrcnt; j++){
-					let w = sqrsz
-					let h = sqrsz
-					let infill = 8
-					let x = startx + (w + gap)*i
-					let y = starty + (h + gap)*j
-					
-					context.beginPath();
-					context.rect(x, y, w, h);
-					context.stroke();
-					
-					context.beginPath();
-					context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
-					context.stroke();
-				}
-			}
 		</script>
 	</body>
 </html>
