@@ -19,7 +19,7 @@
 		<canvas id="tester" ></canvas>
 		<script>
 			let canvas = document.getElementById("tester");
-			canvas.width = window.innerWidth;
+			canvas.width = window.screen.availWidth;
     			canvas.height = window.innerHeight * 0.7;
 			let context = canvas.getContext('2d');
 			context.strokeStyle = '#ddd';
