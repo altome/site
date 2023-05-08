@@ -6,14 +6,7 @@
     		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     		<link rel="stylesheet" href="/docs/css/styles.css">
   	</head>
-	<script>
-		function resizeCanvas() {
-    		var canvs = document.getElementById("tester");
-    		canvs.width = window.innerWidth * 0.7;
-    		canvs.height = window.innerHeight * 0.7;
-		}
-	</script>
-	<body onload="resizeCanvas();">
+	<body>
 		<div class="header">
       			<a href="index" class="logo">Altome.space</a>
        			<div class="header-right">
@@ -22,9 +15,13 @@
         			<a href="test">Test</a>
       			</div>
     	</div>
+		
 		<canvas id="tester" ></canvas>
+		<div class="center" style="padding:20px;">
 		<script>
 			let canvas = document.getElementById("tester");
+			canvas.width = window.innerWidth * 0.7;
+    			canvas.height = window.innerHeight * 0.7;
 			let context = canvas.getContext('2d');
 			
 			context.lineWidth = 4;
@@ -49,5 +46,6 @@
 			context.stroke();
 */
 		</script>
+		</div>
 	</body>
 </html>
