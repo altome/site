@@ -18,14 +18,14 @@
 		<canvas id="responsive-canvas"></canvas>
 		<script>
 			var canvas = document.getElementById('responsive-canvas');
-			
 			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
 			let context = canvas.getContext('2d');
 			context.strokeStyle = '#ddd';
 			context.lineWidth = 4;
 			let sqrcnt = 5
-			let sqrsz = 60
-			let gap = 20
+			let sqrsz = canvas.height/ (sqrcnt * 2)
+			let gap = sqrsz/3
 			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
 			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
 			for(let i = 0; i < sqrcnt; i++){
@@ -33,8 +33,8 @@
 					let w = sqrsz
 					let h = sqrsz
 					let infill = 8
-					let x = 100+(w + gap)*i
-					let y = 100 +(h + gap)*j
+					let x = sqrsz/2+(w + gap)*i
+					let y = sqrsz/2 +(h + gap)*j
 					
 					context.beginPath();
 					context.rect(x, y, w, h);
