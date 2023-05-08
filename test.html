@@ -27,24 +27,22 @@
 			context.lineWidth = 4;
 			for(let i = 1; i < 5; i++){
 				for(let j = 1; j < 5; j++){
+					let w = 60
+					let h = 60
+					let gap = 20
+					let infill = 8
+					let x = 100 + (w + gap)*i
+					let y = 100 + (h + gap)*j
+					
 					context.beginPath();
-					context.rect(100*j,  100 * i, 60, 60);
+					context.rect(x, y, w, h);
+					context.stroke();
+					
+					context.beginPath();
+					context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
 					context.stroke();
 				}
 			}
-/*
-			context.beginPath();
-			context.arc(
-				x0 + w*0.5, 
-				y0 + h*1, 75, Math.PI, Math.PI*2);
-			context.stroke();
-
-			context.beginPath();
-			context.arc(
-				x0 + w*0.5, 
-				y0 + h*0.5, 100, 0, Math.PI);
-			context.stroke();
-*/
 		</script>
 		</div>
 	</body>
