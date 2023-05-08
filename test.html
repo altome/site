@@ -17,6 +17,19 @@
     		</div>
 		<canvas id="canvas"></canvas>
 		<script>
+  			function resize(){    
+    				$("#canvas").outerHeight($(window).height()
+				- $("#canvas").offset().top 
+				- Math.abs($("#canvas").outerHeight(true) 
+				- $("#canvas").outerHeight()));}
+  			$(document).ready(function(){ 
+				resize();
+    			$(window).on("resize", function(){                      
+        			resize();
+			});
+  			});
+  		</script>
+		<script>
 			let context = canvas.getContext('2d');
 		</script>
 	</body>
