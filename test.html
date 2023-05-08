@@ -27,14 +27,15 @@
 			let sqrcnt = 10
 			let sqrsz = 60
 			let gap = 20
-			let startpoint = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
+			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
+			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
 			for(let i = 0; i < sqrcnt; i++){
 				for(let j = 0; j < sqrcnt; j++){
 					let w = sqrsz
 					let h = sqrsz
 					let infill = 8
-					let x = startpoint + (w + gap)*i
-					let y = startpoint + (h + gap)*j
+					let x = startx + (w + gap)*i
+					let y = starty + (h + gap)*j
 					
 					context.beginPath();
 					context.rect(x, y, w, h);
