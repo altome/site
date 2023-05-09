@@ -22,21 +22,26 @@
 			var canvas = document.getElementById('responsive-canvas');
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight * .75;
+			if(canvas.width > canvas.height){
+				metric = canvas.width;
+			}else{
+				metric = canvas.height;
+			}
 			let context = canvas.getContext('2d');
 			context.strokeStyle = '#ddd';
 			context.lineWidth = 4;
-			let sqrcnt = 5
-			let sqrsz = canvas.height/ (sqrcnt * 2)
-			let gap = sqrsz/3
-			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
-			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2
+			let sqrcnt = 5;
+			let sqrsz = canvas.height/ (sqrcnt * 2);
+			let gap = sqrsz/3;
+			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
+			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
 			for(let i = 0; i < sqrcnt; i++){
 				for(let j = 0; j < sqrcnt; j++){
-					let w = sqrsz
-					let h = sqrsz
-					let infill = 8
-					let x = startx + (w + gap)*i
-					let y = starty +(h + gap)*j
+					let w = sqrsz;
+					let h = sqrsz;
+					let infill = 8;
+					let x = startx + (w + gap)*i;
+					let y = starty + (h + gap)*j;
 					
 					context.beginPath();
 					context.rect(x, y, w, h);
