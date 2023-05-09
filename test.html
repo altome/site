@@ -22,6 +22,7 @@
 			var canvas = document.getElementById('responsive-canvas');
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight * .75;
+			let metric = 0
 			if(canvas.width > canvas.height){
 				metric = canvas.width;
 			}else{
@@ -31,7 +32,7 @@
 			context.strokeStyle = '#ddd';
 			context.lineWidth = 4;
 			let sqrcnt = 5;
-			let sqrsz = canvas.height/ (sqrcnt * 2);
+			let sqrsz = metric/ (sqrcnt * 2);
 			let gap = sqrsz/3;
 			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
 			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
