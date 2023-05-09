@@ -16,7 +16,7 @@
       			</div>
     		</div>
 		<div style = "text-align:center;">
-			<canvas id="responsive-canvas" style="border: 1px solid black;"></canvas>
+			<canvas id="responsive-canvas"></canvas>
 		<div/>
 		<script>
 			var canvas = document.getElementById('responsive-canvas');
@@ -35,7 +35,7 @@
 					let w = sqrsz
 					let h = sqrsz
 					let infill = 8
-					let x = sqrsz/2+(w + gap)*i
+					let x = startx + (w + gap)*i
 					let y = sqrsz/2 +(h + gap)*j
 					
 					context.beginPath();
