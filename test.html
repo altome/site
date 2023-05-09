@@ -42,14 +42,16 @@
 					let infill = 8;
 					let x = startx + (w + gap)*i;
 					let y = starty + (h + gap)*j;
-					
-					context.beginPath();
-					context.rect(x, y, w, h);
-					context.stroke();
-					
-					context.beginPath();
-					context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
-					context.stroke();
+					if(Math.random() < 0.5){
+						context.beginPath();
+						context.rect(x, y, w, h);
+						context.stroke();
+					}
+					if(Math.random() < 0.5){
+						context.beginPath();
+						context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
+						context.stroke();
+					}
 				}
 			}
 		</script>
