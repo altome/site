@@ -2,6 +2,11 @@ body {
   background-color: #E9AFAF; 
   overflow: hidden;
 }
+canvas {
+        padding: 0;
+        margin: auto;
+        display: block;
+}
 .CanvasContainer {
     display: flex;
     flex: 1;
