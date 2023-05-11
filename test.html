@@ -22,13 +22,13 @@
 			function draw(){
 				var canvas = document.getElementById('responsive-canvas');
 				let context = canvas.getContext('2d');
-				context.clearRect(0, 0, 300, 300); // clear canvas
 
 				var headerSize = document.getElementById("hdr").offsetHeight;
 				canvas.style.width ='100%';
 				canvas.style.height ='80%';
 				canvas.width  = canvas.offsetWidth;
 				canvas.height = canvas.offsetHeight;
+				context.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
 
 
 				//canvas.width = window.innerWidth - 20;
