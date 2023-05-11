@@ -20,8 +20,15 @@
 		<div/>
 		<script>
 			var canvas = document.getElementById('responsive-canvas');
-			canvas.width = window.innerWidth - 20;
-			canvas.height = window.innerHeight * .75;
+		
+			  canvas.style.width ='100%';
+			  canvas.style.height='100%';
+			  // ...then set the internal size to match
+			  canvas.width  = canvas.offsetWidth;
+			  canvas.height = canvas.offsetHeight;
+			
+			//canvas.width = window.innerWidth - 20;
+			//canvas.height = window.innerHeight * .75;
 			let metric = 0
 			if(canvas.width < canvas.height){
 				metric = canvas.width;
