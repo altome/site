@@ -22,9 +22,10 @@
 			var canvas = document.getElementById('responsive-canvas');
 			var headerSize = document.getElementById("hdr").offsetHeight;
 			canvas.style.width ='100%';
-			canvas.style.height='100%';
+			
 			canvas.width  = canvas.offsetWidth;
 			canvas.height = canvas.offsetHeight - headerSize;
+			canvas.style.height='100%';
 			
 			//canvas.width = window.innerWidth - 20;
 			//canvas.height = window.innerHeight * .75;
