@@ -20,12 +20,11 @@
 		<div/>
 		<script>
 			var canvas = document.getElementById('responsive-canvas');
-		
-			  canvas.style.width ='100%';
-			  canvas.style.height='100%';
-			  // ...then set the internal size to match
-			  canvas.width  = canvas.offsetWidth;
-			  canvas.height = canvas.offsetHeight;
+			var headerSize = document.getElementById("header").offsetHeight
+			canvas.style.width ='100%';
+			canvas.style.height='100%';
+			canvas.width  = canvas.offsetWidth;
+			canvas.height = canvas.offsetHeight - headerSize;
 			
 			//canvas.width = window.innerWidth - 20;
 			//canvas.height = window.innerHeight * .75;
