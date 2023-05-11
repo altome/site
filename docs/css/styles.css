@@ -9,7 +9,7 @@ responsive-canvas {
         width: 400px;
         height: 100%;
 }
-.CanvasContainer {
+CanvasContainer {
     display: flex;
     flex: 1;
 }
