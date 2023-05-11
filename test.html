@@ -30,39 +30,42 @@
 			
 			//canvas.width = window.innerWidth - 20;
 			//canvas.height = window.innerHeight * .75;
-			let metric = 0;
-			if(canvas.width < canvas.height){
-				metric = canvas.width;
-			}else{
-				metric = canvas.height;
-			}
-			
-			context.strokeStyle = '#ddd';
-			context.lineWidth = 4;
-			let sqrcnt = 6;
-			let sqrsz = metric/ (sqrcnt * 2);
-			let gap = sqrsz/3;
-			let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
-			let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
-			for(let i = 0; i < sqrcnt; i++){
-				for(let j = 0; j < sqrcnt; j++){
-					let w = sqrsz;
-					let h = sqrsz;
-					let infill = 8;
-					let x = startx + (w + gap)*i;
-					let y = starty + (h + gap)*j;
-					if(Math.random() < 0.5){
-						context.beginPath();
-						context.rect(x, y, w, h);
-						context.stroke();
-					}
-					if(Math.random() < 0.5){
-						context.beginPath();
-						context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
-						context.stroke();
+			function draw(){
+				let metric = 0;
+				if(canvas.width < canvas.height){
+					metric = canvas.width;
+				}else{
+					metric = canvas.height;
+				}
+
+				context.strokeStyle = '#ddd';
+				context.lineWidth = 4;
+				let sqrcnt = 6;
+				let sqrsz = metric/ (sqrcnt * 2);
+				let gap = sqrsz/3;
+				let startx = (canvas.width/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
+				let starty = (canvas.height/2) - (sqrcnt*sqrsz + (sqrcnt-1)* gap)/2;
+				for(let i = 0; i < sqrcnt; i++){
+					for(let j = 0; j < sqrcnt; j++){
+						let w = sqrsz;
+						let h = sqrsz;
+						let infill = 8;
+						let x = startx + (w + gap)*i;
+						let y = starty + (h + gap)*j;
+						if(Math.random() < 0.5){
+							context.beginPath();
+							context.rect(x, y, w, h);
+							context.stroke();
+						}
+						if(Math.random() < 0.5){
+							context.beginPath();
+							context.rect(x + infill , y + infill, w - infill*2, h - infill*2);
+							context.stroke();
+						}
 					}
 				}
 			}
+			window.requestAnimationFrame(draw);
 		</script>
 	</body>
 </html>
