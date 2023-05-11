@@ -23,7 +23,11 @@
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight * .75;
 			let metric = 0
-			metric = canvas.height
+			if(canvas.width > canvas.height){
+				metric = canvas.width;
+			}else{
+				metric = canvas.height;
+			}
 			let context = canvas.getContext('2d');
 			context.strokeStyle = '#ddd';
 			context.lineWidth = 4;
