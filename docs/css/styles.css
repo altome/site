@@ -6,6 +6,8 @@ canvas {
         padding: 0;
         margin: auto;
         display: block;
+        width: 400px;
+        height: 100%;
 }
 .CanvasContainer {
     display: flex;
