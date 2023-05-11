@@ -2,7 +2,7 @@ body {
   background-color: #E9AFAF; 
   overflow: hidden;
 }
-canvas {
+responsive-canvas {
         padding: 0;
         margin: auto;
         display: block;
