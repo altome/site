@@ -22,8 +22,7 @@
 			function draw(){
 				var canvas = document.getElementById('responsive-canvas');
 				let context = canvas.getContext('2d');
-
-				var headerSize = document.getElementById("hdr").offsetHeight;
+				canvas.style.width = "100%"
 				
 				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
     				$(window).on("resize", function(){         				
