@@ -2,8 +2,6 @@ body {
   background-color: #E9AFAF; 
   overflow: hidden;
 }
-
-
 .CanvasContainer {
     display: flex;
     flex: 1;
