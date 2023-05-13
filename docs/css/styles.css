@@ -7,10 +7,6 @@ body {
         margin: auto;
         display: block;
 }
-.CanvasContainer {
-    display: flex;
-    flex: 1;
-}
 h1 {
   text-align: center;
   display: block;
