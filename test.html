@@ -24,13 +24,6 @@
 				let context = canvas.getContext('2d');
 				canvas.style.width = "100%"
 				
-				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
-    				$(window).on("resize", function(){         				
-					$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
-    				});
-				context.clearRect(0, 0, canvas.width, canvas.height); 
-
-
 				//canvas.width = window.innerWidth - 20;
 				//canvas.height = window.innerHeight * .75;
 				let metric = 0;
