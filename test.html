@@ -24,11 +24,10 @@
 				let context = canvas.getContext('2d');
 
 				var headerSize = document.getElementById("hdr").offsetHeight;
-
-				canvas.width  = canvas.offsetWidth;
+				
 				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
     				$(window).on("resize", function(){         				
-				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+					$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
     				});
 				context.clearRect(0, 0, canvas.width, canvas.height); 
 
