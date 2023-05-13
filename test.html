@@ -19,15 +19,23 @@
 		<canvas id="responsive-canvas"></canvas>
 		<div/>
 		<script>
+			function resize(){    
+    				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+  			}
+  			$(document).ready(function(){
+   			resize();
+    			$(window).on("resize", function(){                      
+        		resize();
+    				});
+  			});
 			function draw(){
 				var canvas = document.getElementById('responsive-canvas');
 				let context = canvas.getContext('2d');
 
 				var headerSize = document.getElementById("hdr").offsetHeight;
-				canvas.style.width ='100%';
-				canvas.style.height ='100%';
+
 				canvas.width  = canvas.offsetWidth;
-				canvas.height = 800;
+				resize();
 				context.clearRect(0, 0, canvas.width, canvas.height); 
 
 
