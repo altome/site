@@ -49,6 +49,9 @@ h1 {
   font-size: 18px;
   line-height: 25px;
   border-radius: 8px;
+  border: none;
+  outline: none;
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
