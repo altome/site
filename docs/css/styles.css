@@ -39,7 +39,6 @@ h1 {
   border-radius: 8px;
 }
 .dropdown .dropbtn {
-  font-size: 16px;  
   text-align: center;
   padding: 5px 10px;
   border: none;
@@ -80,7 +79,6 @@ h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
   border-radius: 8px;
