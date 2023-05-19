@@ -39,14 +39,13 @@ h1 {
   border-radius: 8px;
 }
 .dropbtn, .dropdown {
+  float: left;
+  color: black;
   text-align: center;
   padding: 5px 10px;
-  border: none;
-  outline: none;
-  color: black;
+  text-decoration: none;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: 'Roboto';
   font-size: 18px;
   line-height: 25px;
   border-radius: 8px;
