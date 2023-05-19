@@ -57,7 +57,7 @@ h1 {
 }
 
 /* Change the background color on mouse-over */
-.header a:hover, .dropdown:hover .dropbtn {
+.header a:hover{
   background-color: #b3b3b3;
   color: black;
 }
@@ -80,6 +80,7 @@ h1 {
   display: none;
   position: absolute;
   min-width: 160px;
+  background-color: #f9f9f9;
   z-index: 1;
   border-radius: 8px;
 }
