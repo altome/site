@@ -27,7 +27,7 @@ h1 {
 }
 
 /* Style the header links */
-.header a {
+.header a, .dropdown  {
   float: left;
   color: black;
   text-align: center;
@@ -38,7 +38,7 @@ h1 {
   line-height: 25px;
   border-radius: 8px;
 }
-.dropdown .dropbtn {
+.dropbtn {
   text-align: center;
   padding: 5px 10px;
   border: none;
@@ -58,7 +58,7 @@ h1 {
 }
 
 /* Change the background color on mouse-over */
-.header a:hover, .dropdown:hover, .dropdown-content a:hover{
+.header a:hover, .dropdown:hover{
   background-color: #b3b3b3;
   color: black;
 }
