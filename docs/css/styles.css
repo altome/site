@@ -44,6 +44,7 @@ h1 {
   border: none;
   outline: none;
   color: black;
+  background-color: inherit;
   font-family: 'Roboto';
   font-size: 18px;
   line-height: 25px;
