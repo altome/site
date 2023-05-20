@@ -1,6 +1,7 @@
 body {
   background-color: #E9AFAF; 
   overflow: hidden;
+  font-family: Roboto;
 }
 .responsive-canvas {
         padding: 0;
@@ -10,7 +11,7 @@ body {
 h1 {
   text-align: center;
   display: block;
-  font-family: 'Roboto'; 
+  font-family: inherit 
   color: #ffffff
 }
 .center {
