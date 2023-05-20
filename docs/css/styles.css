@@ -33,7 +33,7 @@ h1 {
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: inherit;
   font-size: 18px;
   line-height: 25px;
   border-radius: 8px;
