@@ -66,12 +66,9 @@ h1 {
 }
 
 /* Change the background color on mouse-over */
-.header a:hover, .dropdown:hover .dropbtn{
+.header a:hover, .dropdown:hover .dropbtn,.dropdown-content a:hover{
   background-color: #b3b3b3;
   color: black;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
 }
 
 .header a.active {
