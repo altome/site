@@ -3,7 +3,6 @@ body {
   overflow: hidden;
   font-family: Roboto;
 }
-
 .responsive-canvas {
         padding: 0;
         margin: auto;
@@ -40,7 +39,7 @@ h1 {
   border-radius: 8px;
 }
 .dropdown {
-  float: right;
+  float: left;
   overflow: hidden;
 }
 .dropdown .dropbtn {
@@ -52,7 +51,6 @@ h1 {
   font-family: inherit;
   margin: 0;
   
-  float: left;
   text-decoration: none;
   line-height: 25px;
   border-radius: 8px;
@@ -118,10 +116,4 @@ h1 {
   .header-right {
     float: none;
   }
-  .dropdown {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 }
