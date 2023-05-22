@@ -51,6 +51,7 @@ h1 {
   font-family: inherit;
   margin: 0;
   
+  float: left;
   text-decoration: none;
   line-height: 25px;
   border-radius: 8px;
