@@ -118,6 +118,8 @@ h1 {
   }
   .dropdown {
     float: none;
+    display: block;
+    text-align: left;
   }
 }
 }
