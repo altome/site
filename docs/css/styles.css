@@ -3,6 +3,7 @@ body {
   overflow: hidden;
   font-family: Roboto;
 }
+
 .responsive-canvas {
         padding: 0;
         margin: auto;
@@ -39,7 +40,7 @@ h1 {
   border-radius: 8px;
 }
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 .dropdown .dropbtn {
@@ -51,6 +52,7 @@ h1 {
   font-family: inherit;
   margin: 0;
   
+  float: left;
   text-decoration: none;
   line-height: 25px;
   border-radius: 8px;
@@ -109,11 +111,16 @@ h1 {
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
   }
   .header-right {
-    float: none;
+    float: right;
+  }
+  .dropdown .dropbtn{
+    float: right;
+    display: block;
+    text-align: left;
   }
 }
