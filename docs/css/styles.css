@@ -3,9 +3,6 @@ body {
   overflow: hidden;
   font-family: Roboto;
 }
-/*bouncy clark image*/
-#clark:active {animation: shake 0.5s;}
-@keyframes shake {0% {transform: scale(1.05, 1.05);}}
 
 .responsive-canvas {
         padding: 0;
