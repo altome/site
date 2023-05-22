@@ -39,7 +39,7 @@ h1 {
   border-radius: 8px;
 }
 .dropdown {
-  float: right;
+  float: left;
   overflow: hidden;
 }
 .dropdown .dropbtn {
