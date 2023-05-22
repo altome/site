@@ -116,7 +116,7 @@ h1 {
     text-align: left;
   }
   .header-right {
-    float: right;
+    float: none;
   }
   .dropdown .dropbtn{
     float: none;
