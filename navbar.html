@@ -16,11 +16,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   overflow: hidden;
   background-color: #333;
 }
-
 .topnav a {
+
 overflow: hidden;
   float: left;
   display: block;
@@ -149,8 +152,8 @@ overflow: hidden;
   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
 }
 
-.content {
-  margin-left: 75px;
+.content {	
+  padding: 16px;
   font-size: 30px;
 }
 </style>
@@ -174,12 +177,6 @@ overflow: hidden;
   </div>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav with Dropdown</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
-</div>
-
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -190,7 +187,6 @@ function myFunction() {
   }
 }
 </script>
-
 <div class="icon-bar">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
